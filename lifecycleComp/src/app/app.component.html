@@ -1,0 +1,9 @@
+<div class="page-area">
+    <h1>Parent</h1>
+    <input type="text" placeholder="input here" #val>
+    <button (click)="submitValue(val)">submit
+        </button>
+    <app-comp1 *ngIf="comp1Exit" [myValue]=" value ">content : {{value}}
+    </app-comp1>
+    <button (click)="destroy() " class="btn btn-danger ">Destroy component</button>
+</div>
